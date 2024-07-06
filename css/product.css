@@ -1,0 +1,202 @@
+.filter_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background: #efefef;
+}
+
+.search_wrap {
+  position: relative;
+  width: 600px;
+}
+.search_wrap input {
+  width: 100%;
+  padding-right: 40px;
+}
+.search_wrap input:focus {
+  border: 1px solid #000;
+}
+.search_wrap button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  border: none;
+  background: url("../images/icon/magnifying-glass-solid.svg") no-repeat
+    center/16px;
+  font-size: 0;
+}
+
+#product_container {
+  margin: 40px 0;
+}
+#product_container .empty_page {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#product_container > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 12px;
+}
+
+#product_container > ul > li {
+  width: calc(20% - 12px);
+  line-height: 1.4;
+}
+#product_container > ul > li .thumb {
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+  overflow: hidden;
+}
+#product_container > ul > li .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 300ms;
+}
+#product_container > ul > li .title {
+  margin-top: 10px;
+}
+#product_container > ul > li .price {
+  font-size: 20px;
+  font-weight: 700;
+}
+#product_container > ul > li .description {
+  font-size: 13px;
+  margin-top: 10px;
+}
+#product_container > ul > li:hover .thumb img {
+  transform: scale(1.1);
+}
+
+#product_pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#back_btn_wrap {
+  margin-top: 20px;
+}
+
+#product_detail {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px 40px;
+  flex-wrap: wrap;
+}
+#product_detail .thumb {
+  width: 40%;
+  min-width: 300px;
+}
+#product_detail .thumb img {
+  width: 100%;
+}
+#product_detail .info {
+  width: calc(60% - 40px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+#product_detail .info .title {
+  font-size: 24px;
+  font-weight: 600;
+}
+#product_detail .info .price {
+  font-size: 26px;
+  font-weight: 700;
+}
+#product_detail .info .row {
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 6px 0;
+}
+#product_detail .info .row .row_label {
+  font-size: 14px;
+  color: #888;
+}
+
+#cart_btn_wrap {
+  height: 46px;
+  display: flex;
+  margin-top: 40px;
+}
+#cart_btn_wrap #cart_count_change {
+  height: 100%;
+  width: 100px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: bold;
+}
+#cart_btn_wrap #cart_count_change:focus {
+  outline: none;
+}
+#cart_btn_wrap #cart_put_btn {
+  max-width: 300px;
+  width: calc(100% - 100px);
+  border: none;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 6px;
+}
+
+#cart_container {
+  margin-top: 40px;
+}
+#cart_list {
+  display: flex;
+  flex-direction: column;
+}
+#cart_list > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+}
+#cart_list > li:first-of-type {
+  border-top: 1px solid #ddd;
+}
+#cart_list > li .thumb {
+  width: 100px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+#cart_list > li .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+#cart_list > li .info {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+#cart_list > li .info .title {
+  font-weight: bold;
+}
+
+#cart_list .delete_btn {
+  border: 1px solid #ccc;
+  color: #000;
+  background: none;
+  padding: 0;
+  height: 30px;
+  line-height: 30px;
+  box-sizing: border-box;
+  width: 60px;
+}

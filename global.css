@@ -1,0 +1,148 @@
+/*
+Copyright (c) 2021 Kil Hyung-jin, with Reserved Font Name Pretendard.
+https://github.com/orioncactus/pretendard
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+*/
+
+@font-face {
+  font-family: "Pretendard Variable";
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url("public/PretendardVariable.woff2") format("woff2-variations");
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Pretendard Variable", Pretendard;
+  color: #000;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid #ddd;
+  z-index: 50;
+}
+
+header h1 a {
+  font-size: 20px;
+  line-height: 60px;
+  font-weight: bold;
+  display: block;
+}
+
+header nav ul {
+  display: flex;
+  gap: 0 8px;
+}
+
+header nav ul > li {
+  font-size: 14px;
+  position: relative;
+}
+
+header nav ul > li a {
+  padding-top: 34px;
+  background-size: 24px;
+  background-position: center 4px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 54px;
+  text-align: center;
+}
+header nav ul > li a#cart {
+  background-image: url("./images/icon/cart-shopping-solid.svg");
+}
+header nav ul > li a#products {
+  background-image: url("./images/icon/house-solid.svg");
+}
+
+#cart_count {
+  color: #fff;
+  background: #f00;
+  position: absolute;
+  top: 0;
+  right: -2px;
+  border-radius: 99px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  pointer-events: none;
+}
+
+.with-header main {
+  padding-top: 60px;
+}
+
+main {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  padding-left: 8px;
+  padding-right: 8px;
+  box-sizing: border-box;
+}
+
+main .common_title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+.common_ui {
+  height: 32px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+}
+.common_ui:focus {
+  outline: none;
+}
+
+.pagination ul {
+  display: flex;
+}
+.pagination ul li a {
+  color: #000;
+  padding: 8px 0;
+  text-decoration: none;
+  width: 40px;
+  text-align: center;
+  display: block;
+}
+.pagination ul li.active a {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+}
+
+.back_btn {
+  background: url("./images/icon/chevron-left-solid.svg") no-repeat left
+    center/14px;
+  padding: 0 0 0 20px;
+  font-size: 24px;
+  line-height: 30px;
+  border: none;
+  font-weight: bold;
+  font-family: "Pretendard Variable", Pretendard;
+}
